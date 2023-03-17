@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="header-nav">
         <a href="./index.html" class="logo"
           ><span class="logo-web">WEB</span>STUDIO</a
         >
-        <ul class="nav-list">
-          <li><a href="" class="nav-list-item">Studio</a></li>
+        <ul class="nav-list list">
+          <li><a href="./index.html" class="nav-list-item">Studio</a></li>
           <li>
             <a href="./portfolio.html" class="nav-list-item">Portfolio</a>
           </li>
@@ -22,7 +28,7 @@
         </ul>
       </nav>
       <address>
-        <ul class="address-list">
+        <ul class="address-list list">
           <li>
             <a href="mailto:info@devstudio.com" class="address-list-item"
               >info@devstudio.com</a
@@ -39,13 +45,13 @@
     <main>
       <!--Main page-->
       <section class="main-section">
-        <h1>Effective Solutions for Your Business</h1>
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button type="button" class="order-service">Order Service</button>
       </section>
       <!--Advantages-->
       <section>
         <h2 hidden>Advantages</h2>
-        <ul class="advantages-list">
+        <ul class="advantages-list list">
           <li>
             <h3 class="advantages-list-item">Strategy</h3>
             <p class="advantages-list-desc">
@@ -79,7 +85,7 @@
       <!--What are we doing-->
       <section>
         <h2 class="whatwedo">What are we doing</h2>
-        <ul class="whatwedo-list">
+        <ul class="whatwedo-list list">
           <li>
             <img src="./images/monitor.jpg" alt="display" width="360" />
           </li>
@@ -92,26 +98,26 @@
         </ul>
       </section>
       <!--Our Team-->
-      <section>
+      <section class="team-section">
         <h2 class="team">Our Team</h2>
-        <ul class="team-list">
-          <li>
+        <ul class="team-list list">
+          <li class="team-list-item">
             <img src="./images/photo1.jpg" alt="display" width="264" />
 
             <h3 class="team-list-name">Mark Guerrero</h3>
             <p class="team-list-prof">Product Designer</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img src="./images/photo2.jpg" alt="display" width="264" />
             <h3 class="team-list-name">Tom Ford</h3>
             <p class="team-list-prof">Frontend Developer</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img src="./images/photo3.jpg" alt="display" width="264" />
             <h3 class="team-list-name">Camila Garcia</h3>
             <p class="team-list-prof">Marketing</p>
           </li>
-          <li>
+          <li class="team-list-item">
             <img src="./images/photo4.jpg" alt="display" width="264" />
             <h3 class="team-list-name">Daniel Wilson</h3>
             <p class="team-list-prof">UI Designer</p>
