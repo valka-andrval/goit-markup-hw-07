@@ -116,9 +116,17 @@ body {
 .contacts {
   font-style: normal;
 }
-.hero-container {
-  padding-left: 15px;
-  padding-right: 15px;
+.hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .main-section {
   background-color: var(--primary-text-color);
@@ -203,11 +211,6 @@ body {
   display: flex;
   gap: 24px;
 }
-.hero-container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
 .team-section {
   background: var(--color-cloud);
   padding-top: 120px;
@@ -226,12 +229,17 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.team-content {
+  padding: 32px 16px;
+}
 .team-list-name {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 8px;
 }
 .team-list-prof {
   font-weight: 400;
@@ -239,6 +247,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  text-align: center;
 }
 footer {
   background-color: var(--primary-text-color);
@@ -250,13 +259,10 @@ footer {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
   text-decoration: none;
-  margin-bottom: 16px;
 }
 .logo-studio-footer {
   color: var(--color-cloud);
@@ -270,12 +276,12 @@ footer {
   letter-spacing: 0.02em;
   color: var(--color-cloud);
   max-width: 264px;
+  margin-top: 16px;
 }
 
 /* css for porfolio */
 
-.header-content {
-  box-sizing: border-box;
+.header {
   background: var(--color-white);
   border-bottom: 1px solid var(--border-portfolio-color);
 }
@@ -297,10 +303,10 @@ footer {
   margin-bottom: 72px;
   display: flex;
   gap: 24px;
+  justify-content: center;
 }
 .work-button-item,
 .work-button-item {
-  box-sizing: border-box;
   background: var(--color-cloud);
   border: 1px solid var(--border-portfolio-color);
   border-radius: 4px;
@@ -322,24 +328,25 @@ footer {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--color-white);
+  border: transparent;
 }
 .work-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px 24px;
 }
-.work-list-item {
-  box-sizing: border-box;
+.work-list-descr {
   background: var(--color-white);
-  border: 1px solid var(--border-portfolio-color);
-  margin-right: 24px;
-  margin-bottom: 48px;
-  width: calc((100% - 48px) / 3);
-  padding-bottom: 32px;
+  border-left: 1px solid var(--border-portfolio-color);
+  border-bottom: 1px solid var(--border-portfolio-color);
+  border-right: 1px solid var(--border-portfolio-color);
+  width: 360px;
+  padding: 32px 16px;
 }
-.work-list-item:nth-child(3n) {
+.work-list:nth-child(3n) {
   margin-right: 0;
 }
-.work-list-item:nth-child(-3n) {
+.work-list:nth-child(-3n) {
   margin-bottom: 0;
 }
 .work-list-item > a {
@@ -351,10 +358,7 @@ footer {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-top: 32px;
   margin-bottom: 8px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 .work-list-service {
   font-weight: 400;
@@ -362,6 +366,4 @@ footer {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  padding-left: 16px;
-  padding-right: 16px;
 }
