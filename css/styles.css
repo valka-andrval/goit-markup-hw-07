@@ -63,7 +63,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-iris);
-  margin-right: 130px;
+  margin-right: 76px;
 }
 .logo-studio {
   color: var(--primary-text-color);
@@ -154,12 +154,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--color-white);
   cursor: pointer;
   min-width: 169px;
   padding: 16px 32px;
+  border-color: transparent;
 }
 .order-service:hover,
 .order-service:focus {
@@ -324,11 +324,11 @@ footer {
 }
 .work-button-item:hover,
 .work-button-item:focus {
-  background: var(--color-ocean);
+  background-color: var(--color-ocean);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--color-white);
-  border: transparent;
+  border-color: transparent;
 }
 .work-list {
   display: flex;
@@ -340,7 +340,6 @@ footer {
   border-left: 1px solid var(--border-portfolio-color);
   border-bottom: 1px solid var(--border-portfolio-color);
   border-right: 1px solid var(--border-portfolio-color);
-  width: 360px;
   padding: 32px 16px;
 }
 .work-list:nth-child(3n) {
