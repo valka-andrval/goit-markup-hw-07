@@ -7,6 +7,8 @@
   --border-portfolio-color: #e7e9fc;
   --color-ocean: #404bbf;
   --color-slate: #434455;
+  --bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
+  --color-light-slate: #8e8f99;
 }
 
 p,
@@ -133,6 +135,10 @@ body {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  background-image: var(--bg-gradient), url(../images/people-office.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   font-weight: 700;
@@ -169,6 +175,13 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.advantages-icon-container {
+  background-color: var(--color-cloud);
+  margin-bottom: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+}
 .advantages-list {
   display: flex;
   gap: 24px;
@@ -192,7 +205,8 @@ body {
   color: var(--secondary-text-color);
 }
 .whatwedo,
-.team {
+.team,
+.customers {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -248,11 +262,80 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   text-align: center;
+  margin-bottom: 8px;
+}
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.team-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color-iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--color-ocean);
+}
+.team-soc-icon {
+  fill: var(--color-cloud);
+}
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers {
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-item {
+  width: 168px;
+  height: 88px;
+}
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-light-slate);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers-link:focus,
+.customers-link:hover {
+  border-color: var(--color-iris);
+}
+.customers-icon {
+  fill: var(--color-light-slate);
+}
+.customers-icon:focus,
+.customers-icon:hover {
+  fill: var(--color-iris);
 }
 footer {
   background-color: var(--primary-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.footer-container {
+  display: flex;
+  gap: 120px;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -277,6 +360,40 @@ footer {
   color: var(--color-cloud);
   max-width: 264px;
   margin-top: 16px;
+}
+.footer-soc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+  margin-bottom: 16px;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color-iris);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+}
+.footer-soc-icon {
+  fill: var(--color-cloud);
+}
+.footer-soc-link:focus,
+.footer-soc-link:hover {
+  background-color: var(--color-ocean);
 }
 
 /* css for porfolio */
