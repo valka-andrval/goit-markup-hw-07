@@ -320,16 +320,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: var(--color-light-slate);
 }
 .customers-link:focus,
 .customers-link:hover {
   border-color: var(--color-ocean);
-}
-.customers-icon {
-  fill: var(--color-light-slate);
-}
-.customers-icon:focus,
-.customers-icon:hover {
   fill: var(--color-ocean);
 }
 footer {
