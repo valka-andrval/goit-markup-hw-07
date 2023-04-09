@@ -124,11 +124,11 @@ body {
   display: flex;
   align-items: center;
   margin-right: auto;
-  padding-right: 40px;
 }
 .nav-list {
   display: flex;
   gap: 40px;
+  padding-right: 40px;
 }
 .address-list {
   display: flex;
