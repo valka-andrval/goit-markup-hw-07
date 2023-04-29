@@ -23,16 +23,95 @@
   <body>
     <header class="header">
       <div class="container header-container">
+        <a href="./index.html" class="logo link"
+          >WEB<span class="logo-studio">Studio</span></a
+        >
+        <button type="button" class="header-menu-btn btn">
+          <svg width="32px" height="22px">
+            <use href="./images/icons.svg#icon-menu-btn" data-menu-open></use>
+          </svg>
+        </button>
+        <!-- ==== Mobile menu =========== -->
+        <div class="mob-menu" data-menu>
+          <button type="button" class="mob-close-btn" data-menu-close>
+            <svg class="mob-icon-close" width="8px" height="8px">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mob-header-nav">
+            <ul class="mob-nav-list list">
+              <li class="mob-nav-list-item">
+                <a
+                  href="./index.html"
+                  class="mob-nav-list-item link mob-current"
+                  >Studio</a
+                >
+              </li>
+              <li class="mob-nav-list-item">
+                <a href="./portfolio.html" class="mob-nav-list-item link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-nav-list-item">
+                <a href="" class="mob-nav-list-item link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-contacts">
+            <ul class="mob-address-list list">
+              <li class="mob-address-list-item-tel">
+                <a
+                  href="tel:+110001111111"
+                  class="mob-address-list-item-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-list-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-address-list-item-email link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link"
+                  ><svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link"
+                  ><svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link"
+                  ><svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link"
+                  ><svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- =============================================================== -->
         <nav class="header-nav">
-          <a href="./index.html" class="logo link"
-            >WEB<span class="logo-studio">Studio</span></a
-          >
           <ul class="nav-list list">
             <li>
-              <a href="./index.html" class="nav-list-item link">Studio</a>
+              <a href="./index.html" class="nav-list-item link current"
+                >Studio</a
+              >
             </li>
             <li>
-              <a href="./portfolio.html" class="nav-list-item link current"
+              <a href="./portfolio.html" class="nav-list-item link"
                 >Portfolio</a
               >
             </li>
@@ -41,7 +120,7 @@
         </nav>
         <address class="contacts">
           <ul class="address-list list">
-            <li>
+            <li class="address-list-email">
               <a href="mailto:info@devstudio.com" class="address-list-item link"
                 >info@devstudio.com</a
               >
@@ -83,6 +162,7 @@
                   <img
                     src="./images/banking-app-interface-concept.jpg"
                     alt="Banking App Interface Concept"
+                    srcset="./images/banking-app-interface-concept-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -103,6 +183,7 @@
                   <img
                     src="./images/cashless-payment.jpg"
                     alt="Cashless Payment"
+                    srcset="./images/cashless-payment-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -123,6 +204,7 @@
                   <img
                     src="./images/meditation-app.jpg"
                     alt="Meditation App"
+                    srcset="./images/meditation-app-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -143,6 +225,7 @@
                   <img
                     src="./images/taxi-service.jpg"
                     alt="Taxi Service"
+                    srcset="./images/taxi-service-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -163,6 +246,7 @@
                   <img
                     src="./images/screen-illustrations.jpg"
                     alt="Screen Illustrations"
+                    srcset="./images/screen-illustrations-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -183,6 +267,7 @@
                   <img
                     src="./images/online-courses.jpg"
                     alt="Online Courses"
+                    srcset="./images/online-courses-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -203,6 +288,7 @@
                   <img
                     src="./images/instagram-stories-concept.jpg"
                     alt="Instagram Stories Concept"
+                    srcset="./images/instagram-stories-concept-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -223,6 +309,7 @@
                   <img
                     src="./images/organic-food.jpg"
                     alt="Organic Food"
+                    srcset="./images/organic-food-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -243,6 +330,7 @@
                   <img
                     src="./images/fresh-coffee.jpg"
                     alt="Fresh Coffee"
+                    srcset="./images/fresh-coffee-2x.jpg 2x"
                     width="360"
                   />
                   <p class="overlay">
@@ -321,5 +409,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
