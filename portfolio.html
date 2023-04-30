@@ -26,14 +26,19 @@
         <a href="./index.html" class="logo link"
           >WEB<span class="logo-studio">Studio</span></a
         >
-        <button type="button" class="header-menu-btn btn">
+        <button
+          type="button"
+          class="header-menu-btn btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="32px" height="22px">
             <use href="./images/icons.svg#icon-menu-btn" data-menu-open></use>
           </svg>
         </button>
         <!-- ==== Mobile menu =========== -->
-        <div class="mob-menu" data-menu>
-          <button type="button" class="mob-close-btn" data-menu-close>
+        <div class="mob-menu js-menu-container" id="mobile-menu">
+          <button type="button" class="mob-close-btn js-close-menu">
             <svg class="mob-icon-close" width="8px" height="8px">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
@@ -41,18 +46,16 @@
           <nav class="mob-header-nav">
             <ul class="mob-nav-list list">
               <li class="mob-nav-list-item">
-                <a
-                  href="./index.html"
-                  class="mob-nav-list-item link mob-current"
-                  >Studio</a
-                >
+                <a href="./index.html" class="mob-nav-list-item link">Studio</a>
               </li>
               <li class="mob-nav-list-item">
-                <a href="./portfolio.html" class="mob-nav-list-item link"
+                <a
+                  href="./portfolio.html"
+                  class="mob-nav-list-item link mob-current"
                   >Portfolio</a
                 >
               </li>
-              <li class="mob-nav-list-item">
+              <li class="mob-nav-list-item link">
                 <a href="" class="mob-nav-list-item link">Contacts</a>
               </li>
             </ul>
@@ -106,12 +109,10 @@
         <nav class="header-nav">
           <ul class="nav-list list">
             <li>
-              <a href="./index.html" class="nav-list-item link current"
-                >Studio</a
-              >
+              <a href="./index.html" class="nav-list-item link">Studio</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="nav-list-item link"
+              <a href="./portfolio.html" class="nav-list-item link current"
                 >Portfolio</a
               >
             </li>
