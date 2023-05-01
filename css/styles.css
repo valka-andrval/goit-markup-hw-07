@@ -139,11 +139,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  pointer-events: none;
 }
 .mob-menu {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -207,7 +206,7 @@ body {
 }
 .mob-soc-list {
   display: flex;
-  justify-content: space-between;
+  gap: 56px;
   margin-bottom: 0;
 }
 .mob-soc-item {
@@ -470,7 +469,7 @@ body {
   appearance: none;
 }
 .check-icon {
-  display: inline-block;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
